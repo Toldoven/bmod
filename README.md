@@ -1,6 +1,6 @@
 # BMOD
 
-[Get on Godot Asset Library](https://godotengine.org/asset-library/asset/0)
+[Get on Godot Asset Library](https://godotengine.org/asset-library/asset/11761)
 
 Add-on for Godot 4.2.
 
