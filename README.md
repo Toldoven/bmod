@@ -6,7 +6,7 @@ Add-on for Godot 4.2.
 
 ## Installation
 
-[Get on Godot Asset Library](https://godotengine.org/asset-library/asset/11761)
+[Get on Godot Asset Library](https://godotengine.org/asset-library/asset/11761) (Still pending at the time of writing)
 
 Or simply clone the repo and copy the [addons/bmod](addons/bmod) folder into your project. 
 
