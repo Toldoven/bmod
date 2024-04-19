@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="SingleSoundEffect" load_steps=5 format=3 uid="uid://sx3yg2j03c3h"]
+
+[ext_resource type="AudioStream" uid="uid://cne6goa3qq1fo" path="res://assets/sfx/pop.mp3" id="1_pvvo7"]
+[ext_resource type="Script" path="res://addons/bmod/scripts/resources/sound_effect_meta.gd" id="2_ng2j0"]
+[ext_resource type="Script" path="res://addons/bmod/scripts/resources/single_sound_effect.gd" id="3_jua7k"]
+
+[sub_resource type="Resource" id="Resource_vhueu"]
+script = ExtResource("2_ng2j0")
+volume_db = -3.0
+volume_variation_db = 0.0
+pitch_scale = 1.45
+pitch_variation = 0.2
+
+[resource]
+script = ExtResource("3_jua7k")
+audio_stream = ExtResource("1_pvvo7")
+meta = SubResource("Resource_vhueu")
+play = false
+play_on_change = true

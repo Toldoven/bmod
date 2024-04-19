@@ -1,0 +1,38 @@
+[gd_resource type="Resource" script_class="MultiSoundEffect" load_steps=11 format=3 uid="uid://74gcx7c0lfyx"]
+
+[ext_resource type="Script" path="res://addons/bmod/scripts/resources/multi_sound_effect.gd" id="1_0koik"]
+[ext_resource type="AudioStream" uid="uid://dstxti2f5q7bb" path="res://assets/sfx/multi/step_1.wav" id="1_6vqc4"]
+[ext_resource type="Script" path="res://addons/bmod/scripts/resources/multi_sound_effect_item.gd" id="2_ivp32"]
+[ext_resource type="AudioStream" uid="uid://c1tdujgo5vhy7" path="res://assets/sfx/multi/step_2.wav" id="3_tgpu0"]
+[ext_resource type="AudioStream" uid="uid://c2tjlgnuac7c7" path="res://assets/sfx/multi/step_3.wav" id="4_wbyg8"]
+[ext_resource type="Script" path="res://addons/bmod/scripts/resources/sound_effect_meta.gd" id="5_30o01"]
+
+[sub_resource type="Resource" id="Resource_1mydd"]
+script = ExtResource("2_ivp32")
+audio_stream = ExtResource("1_6vqc4")
+weight = 1
+
+[sub_resource type="Resource" id="Resource_3w6pw"]
+script = ExtResource("2_ivp32")
+audio_stream = ExtResource("3_tgpu0")
+weight = 1
+
+[sub_resource type="Resource" id="Resource_p0i4p"]
+script = ExtResource("2_ivp32")
+audio_stream = ExtResource("4_wbyg8")
+weight = 1
+
+[sub_resource type="Resource" id="Resource_qhm5d"]
+script = ExtResource("5_30o01")
+volume_db = 0.0
+volume_variation_db = 0.0
+pitch_scale = 1.0
+pitch_variation = 0.0
+
+[resource]
+script = ExtResource("1_0koik")
+effect_pool = Array[ExtResource("2_ivp32")]([SubResource("Resource_1mydd"), SubResource("Resource_3w6pw"), SubResource("Resource_p0i4p")])
+mode = 0
+meta = SubResource("Resource_qhm5d")
+play = false
+play_on_change = false

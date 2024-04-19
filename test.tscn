@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=3 uid="uid://c8wspe8vaa7vs"]
+
+[ext_resource type="Script" path="res://addons/bmod/scripts/nodes/sound_effect_player.gd" id="1_jfxjx"]
+[ext_resource type="Resource" uid="uid://sx3yg2j03c3h" path="res://resources/sfx/pop.tres" id="2_2bqhc"]
+[ext_resource type="Script" path="res://addons/bmod/scripts/nodes/sound_effect_player_2d.gd" id="3_yy6vv"]
+[ext_resource type="Script" path="res://addons/bmod/scripts/nodes/sound_effect_player_3d.gd" id="4_mbsmh"]
+
+[node name="Test" type="Node"]
+
+[node name="SoundEffectPlayer" type="Node" parent="."]
+script = ExtResource("1_jfxjx")
+sound_effect = ExtResource("2_2bqhc")
+bus = &"Master"
+
+[node name="SoundEffectPlayer2D" type="Node2D" parent="."]
+script = ExtResource("3_yy6vv")
+bus = &"Master"
+
+[node name="SoundEffectPlayer3D" type="Node3D" parent="."]
+script = ExtResource("4_mbsmh")
+bus = &"Master"
