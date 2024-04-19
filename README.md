@@ -1,10 +1,14 @@
 # BMOD
 
-[Get on Godot Asset Library](https://godotengine.org/asset-library/asset/11761)
-
 Add-on for Godot 4.2.
 
 ![](images/meme.png)
+
+## Installation
+
+[Get on Godot Asset Library](https://godotengine.org/asset-library/asset/11761)
+
+Or simply clone the repo and copy the [addons/bmod](addons/bmod) folder into your project. 
 
 ## Features
 
