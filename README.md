@@ -1,6 +1,6 @@
 # BMOD
 
-Add-on for Godot 4.2.
+A simple add-on for Godot 4.2. Copies some of the functionality of FMOD inside of Godot. Meant for game jams, prototypes, and small projects.
 
 ![](images/meme.png)
 
