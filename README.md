@@ -6,7 +6,7 @@ A simple add-on for Godot 4.2. Copies some of the functionality of FMOD inside
 
 ## Installation
 
-[Get on Godot Asset Library](https://godotengine.org/asset-library/asset/11761) (Still pending at the time of writing)
+[Get on Godot Asset Library](https://godotengine.org/asset-library/asset/2884)
 
 Or simply clone the repo and copy the [addons/bmod](addons/bmod) folder into your project. 
 
