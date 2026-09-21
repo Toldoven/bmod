@@ -1,13 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://covgjw36o2prd"]
+[gd_scene format=3 uid="uid://covgjw36o2prd"]
 
-[ext_resource type="Script" path="res://addons/bmod/autoloads/bmod/bmod.gd" id="1_g1b2e"]
+[ext_resource type="Script" uid="uid://cfgbnsg7p6by2" path="res://addons/bmod/autoloads/bmod/bmod.gd" id="1_g1b2e"]
 
-[node name="BMOD" type="Node"]
+[node name="BMOD" type="Node" unique_id=1714359162]
 process_mode = 3
 script = ExtResource("1_g1b2e")
 
-[node name="Container" type="Node" parent="."]
+[node name="Container" type="Node" parent="." unique_id=284398905]
 
-[node name="Container2D" type="Node2D" parent="."]
+[node name="Container2D" type="Node2D" parent="." unique_id=1810729175]
 
-[node name="Container3D" type="Node3D" parent="."]
+[node name="Container3D" type="Node3D" parent="." unique_id=1055679415]

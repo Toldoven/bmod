@@ -1,21 +1,21 @@
-[gd_scene load_steps=5 format=3 uid="uid://c8wspe8vaa7vs"]
+[gd_scene format=3 uid="uid://c8wspe8vaa7vs"]
 
-[ext_resource type="Script" path="res://addons/bmod/scripts/nodes/sound_effect_player.gd" id="1_jfxjx"]
+[ext_resource type="Script" uid="uid://bl48d2gul61nn" path="res://addons/bmod/scripts/nodes/sound_effect_player.gd" id="1_jfxjx"]
 [ext_resource type="Resource" uid="uid://sx3yg2j03c3h" path="res://resources/sfx/pop.tres" id="2_2bqhc"]
-[ext_resource type="Script" path="res://addons/bmod/scripts/nodes/sound_effect_player_2d.gd" id="3_yy6vv"]
-[ext_resource type="Script" path="res://addons/bmod/scripts/nodes/sound_effect_player_3d.gd" id="4_mbsmh"]
+[ext_resource type="Script" uid="uid://b8hjcvor8ui16" path="res://addons/bmod/scripts/nodes/sound_effect_player_2d.gd" id="3_yy6vv"]
+[ext_resource type="Script" uid="uid://bmc01hxlwxjqa" path="res://addons/bmod/scripts/nodes/sound_effect_player_3d.gd" id="4_mbsmh"]
 
-[node name="Test" type="Node"]
+[node name="Test" type="Node" unique_id=1237965834]
 
-[node name="SoundEffectPlayer" type="Node" parent="."]
+[node name="SoundEffectPlayer" type="Node" parent="." unique_id=1671444023]
 script = ExtResource("1_jfxjx")
 sound_effect = ExtResource("2_2bqhc")
 bus = &"Master"
 
-[node name="SoundEffectPlayer2D" type="Node2D" parent="."]
+[node name="SoundEffectPlayer2D" type="Node2D" parent="." unique_id=631050348]
 script = ExtResource("3_yy6vv")
 bus = &"Master"
 
-[node name="SoundEffectPlayer3D" type="Node3D" parent="."]
+[node name="SoundEffectPlayer3D" type="Node3D" parent="." unique_id=1393126181]
 script = ExtResource("4_mbsmh")
 bus = &"Master"
