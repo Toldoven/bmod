@@ -48,7 +48,7 @@ func play_sfx(
 # The sound will continue to play after you switch the scene
 #
 # If this is not a desired behaviour (For 2D usually it's not):  
-# - Either pass `override_container_2d` to this function
+# - Either pass `override_container` to this function
 # - Or set the `default_container_2d` propery on BMOD autoload each time you load a scene
 func play_sfx_2d(
 	sound_effect: SoundEffect,
@@ -60,10 +60,10 @@ func play_sfx_2d(
 	
 	if is_instance_valid(override_container):
 		override_container.add_child(player)
-	elif is_instance_valid(default_container):
-		default_container.add_child(player)
+	elif is_instance_valid(default_container_2d):
+		default_container_2d.add_child(player)
 	else:
-		_internal_container.add_child(player)
+		_internal_container_2d.add_child(player)
 	
 	player.global_position = global_position
 	sound_effect.apply_to_player(player)
@@ -78,7 +78,7 @@ func play_sfx_2d(
 # The sound will continue to play after you switch the scene
 #
 # If this is not a desired behaviour (For 3D usually it's not):  
-# - Either pass `override_container_3d` to this function
+# - Either pass `override_container` to this function
 # - Or set the `default_container_3d` propery on BMOD autoload each time you load a scene
 func play_sfx_3d(
 	sound_effect: SoundEffect,
@@ -90,10 +90,10 @@ func play_sfx_3d(
 	
 	if is_instance_valid(override_container):
 		override_container.add_child(player)
-	elif is_instance_valid(default_container):
-		default_container.add_child(player)
+	elif is_instance_valid(default_container_3d):
+		default_container_3d.add_child(player)
 	else:
-		_internal_container.add_child(player)
+		_internal_container_3d.add_child(player)
 	
 	player.global_position = global_position
 	sound_effect.apply_to_player(player)
