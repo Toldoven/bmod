@@ -8,10 +8,11 @@ const BASE_ERROR: String = "SoundEffect is an abstract class. You can't use it o
 
 @export var meta: SoundEffectMeta:
 	set(value):
+		if meta:
+			meta.changed.disconnect(_on_meta_changed)
 		meta = value
-		if not meta:
-			return
-		meta.changed.connect(_on_meta_changed)
+		if meta:
+			meta.changed.connect(_on_meta_changed)
 
 
 @export_category("Play")
