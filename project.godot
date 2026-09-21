@@ -13,7 +13,6 @@ config_version=5
 config/name="BMOD Test"
 run/main_scene="res://test.tscn"
 config/features=PackedStringArray("4.7", "GL Compatibility")
-config/icon="res://icon.svg"
 
 [autoload]
 
