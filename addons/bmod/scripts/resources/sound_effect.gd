@@ -1,9 +1,8 @@
 @tool
 @icon("res://addons/bmod/icons/SoundEffect.svg")
 
+@abstract
 class_name SoundEffect extends Resource
-
-const BASE_ERROR: String = "SoundEffect is an abstract class. You can't use it on its own. Please use SoundEffect or MultiSoundEffect instead" 
 
 
 @export var meta: SoundEffectMeta:
@@ -47,10 +46,7 @@ func _on_changed() -> void:
 	test_play()
 	
 	
-func get_audio_stream() -> AudioStream:
-	push_error(BASE_ERROR)
-	assert(false)
-	return null
+@abstract func get_audio_stream() -> AudioStream
 
 
 func get_volume_db() -> float:
