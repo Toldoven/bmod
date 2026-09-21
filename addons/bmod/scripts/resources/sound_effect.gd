@@ -11,10 +11,7 @@ const BASE_ERROR: String = "SoundEffect is an abstract class. You can't use it o
 		meta = value
 		if not meta:
 			return
-		meta.changed.connect(func() -> void:
-			emit_changed()
-			_on_changed()
-		)
+		meta.changed.connect(_on_meta_changed)
 
 
 @export_category("Play")
@@ -30,6 +27,11 @@ const BASE_ERROR: String = "SoundEffect is an abstract class. You can't use it o
 var last_changed: int = 0
 
 const CHANGE_PLAY_DELAY_MS: int = 100
+
+func _on_meta_changed() -> void:
+	emit_changed()
+	_on_changed()
+
 
 func _on_changed() -> void: 
 	
